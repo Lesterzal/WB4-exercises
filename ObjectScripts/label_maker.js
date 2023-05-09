@@ -4,12 +4,13 @@ let myInfo = {
   city: "Long Island",
   state: "New York",
   zip: "11765"
-};
+}
 
-function printContact(contact) {
-  console.log(contact.name);
-  console.log(contact.address);
-  console.log(`${contact.city}, ${contact.state} ${contact.zip}`);
+function printContact(addressInfo) {
+  const line1 = `${addressInfo.name}\n`;
+  const line2 = `${addressInfo.address}\n`;
+  const line3 = `${addressInfo.city}, ${addressInfo.state}, ${addressInfo.zip}`;
+  console.log(line1 + line2 + line3);
 }
 
 printContact(myInfo);
